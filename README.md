@@ -107,7 +107,7 @@ NIL
     (if (null list1)
         nil
       ;; If first two elements are the same that checking next two elements recursively
-      (if (equal (car list1) (car list2))
+      (if (eq (car list1) (car list2))
           (sublist-matches-p (cdr list1) (cdr list2))
         ;; Otherwise -> return NIL
         nil))))
