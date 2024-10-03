@@ -1,0 +1,4 @@
+src.fasl
+.vscode/settings.json
+.vscode/alive/fasl/tmp.lisp
+.vscode/alive/fasl/tmp.fasl

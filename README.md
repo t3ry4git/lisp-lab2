@@ -92,7 +92,7 @@ NIL
   (if (null main-list)
       nil
     ;; If first element of main-list is a target
-    (if (eq (car main-list) target)      
+    (if (eql (car main-list) target)      
         ;; -> checking that sublists are the same
         (sublist-matches-p (cdr main-list) sublist)
       ;; -> recursively going with cdr main-list
@@ -107,7 +107,7 @@ NIL
     (if (null list1)
         nil
       ;; If first two elements are the same that checking next two elements recursively
-      (if (eq (car list1) (car list2))
+      (if (eql (car list1) (car list2))
           (sublist-matches-p (cdr list1) (cdr list2))
         ;; Otherwise -> return NIL
         nil))))
