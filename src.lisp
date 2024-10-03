@@ -40,7 +40,7 @@
   (if (null main-list)
       nil
     ;; If first element of main-list is a target
-    (if (equal (car main-list) target)      
+    (if (eq (car main-list) target)      
         ;; -> checking that sublists are the same
         (sublist-matches-p (cdr main-list) sublist)
       ;; -> recursively going with cdr main-list
